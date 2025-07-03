@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap');
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --default-font-family: 'Roboto';
+  --color-text: #1f2937;
+  --color-text-dark: #e5e7eb;
+  --color-bg: #f9fafb;
+  --color-bg-dark: #1e1e2f;
+  --color-col-def: #ffffff;
+  --color-col-def-dark: #2a2a40;
+  --color-card: #f1f5f9;
+  --color-card-dark: #33334d;
+  --color-primary: #3b82f6;
+  --color-primary-dark: #6366f1;
+}
+
+body {
+  @apply bg-bg dark:bg-bg-dark text-text dark:text-text-dark;
+}
